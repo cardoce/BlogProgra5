@@ -1,29 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>CSS Template</title>
+<title>DND</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 </head>
 <body>
 <header>
-  <h2>Cities</h2>
+  <h2>Dungeons & Dragons</h2>
 </header>
 
 <section>
   <nav>
     <ul>
-      <li><a href="#">London</a></li>
-      <li><a href="#">Paris</a></li>
-      <li><a href="#">Tokyo</a></li>
+      <li><a href="#">Clases</a></li>
+      <li><a href="#">Races</a></li>
+      <li><a href="#">Gear</a></li>
     </ul>
   </nav>
 
   <article>
-    <h1>London</h1>
-    <p>London is the capital city of England. It is the most populous city in the  United Kingdom, with a metropolitan area of over 13 million inhabitants.</p>
-    <p>Standing on the River Thames, London has been a major settlement for two millennia, its history going back to its founding by the Romans, who named it Londinium.</p>
+    <h1>Ranger</h1>
+    <p>Rough and wild looking, a human stalks alone through the shadows of trees
+      , hunting the orcs he knows are planning a raid on a nearby farm. Clutching
+      a shortsword in each hand, he becomes a whirlwind of steel, cutting down one
+      enemy after another.</p>
+      <%= button_to "Gallery", image_index_path, :method => :get, :class => "galleryButton" %>
   </article>
 </section>
 
