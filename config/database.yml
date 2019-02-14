@@ -15,9 +15,9 @@
 development:
   adapter: postgresql
   encoding: unicode
-  database: sample_postgres_development
+  database: blog_dnd
   pool: 5
-  username: sample_postgres
+  username:
   password:
 
   # Connect on a TCP socket. Omitted by default since the client uses a
