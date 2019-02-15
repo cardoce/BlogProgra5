@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>DND</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+<body>
+<header>
+  <h2>Dungeons & Dragons</h2>
+</header>
+
+<section>
+  <nav>
+    <ul>
+      <li><a href="../welcome/index">Clases</a></li>
+      <li><a href="#">Races</a></li>
+      <li><a href="../characters">Characters</a></li>
+    </ul>
+  </nav>
+
+  <article>
+    <ul>
+      <% @characters.each do |char| %>
+        <li><%= link_to char.name, character_path(char)  %></li>
+      <% end %>
+    </ul>
+    <%= button_to "Create a Character", new_character_path, :method => :get, class: "galleryButton" %>
+  </article>
+</section>
+
+<footer>
+  <p>Footer</p>
+</footer>
+
+</body>
+</html>

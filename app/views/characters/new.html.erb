@@ -16,12 +16,18 @@
     <ul>
       <li><a href="../welcome/index">Clases</a></li>
       <li><a href="#">Races</a></li>
-      <li><a href="#">Characters</a></li>
+      <li><a href="../characters">Characters</a></li>
     </ul>
   </nav>
 
   <article>
-
+    <%= form_with model: @character do |form| %>
+      <%= form.text_field :name, placeholder: "Name" %>
+      <%= form.text_field :race, placeholder: "Race" %>
+      <%= form.text_field :level, placeholder: "Level" %>
+      <%= form.select :dndclass, options_for_select([["Select Class", ""], "Ranger", "Cleric", "Warlock", "Wizzard", "Paladin"])%>
+      <%= form.submit %>
+    <% end %>
   </article>
 </section>
 

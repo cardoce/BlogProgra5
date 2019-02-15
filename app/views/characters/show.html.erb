@@ -14,14 +14,17 @@
 <section>
   <nav>
     <ul>
-      <li><a href="#">Clases</a></li>
+      <li><a href="../welcome/index">Clases</a></li>
       <li><a href="#">Races</a></li>
-      <li><a href="#">Characters</a></li>
+      <li><a href="../characters">Characters</a></li>
     </ul>
   </nav>
 
   <article>
-
+    <h1><%= @character.name %></h1>
+    <h4>Class: <%= @character.dndclass %></h4>
+    <h4>Race: <%= @character.race %></h4>
+    <h4>Levle: <%= @character.level %></h4>
   </article>
 </section>
 
