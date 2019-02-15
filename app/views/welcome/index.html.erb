@@ -16,7 +16,7 @@
     <ul>
       <li><a href="#">Clases</a></li>
       <li><a href="#">Races</a></li>
-      <li><a href="../character/index">Characters</a></li>
+      <li><a href="../characters">Characters</a></li>
     </ul>
   </nav>
 
@@ -27,6 +27,23 @@
       a shortsword in each hand, he becomes a whirlwind of steel, cutting down one
       enemy after another.</p>
       <%= button_to "Gallery", image_index_path, :method => :get, :class => "galleryButton" %>
+      <h1>Wizard</h1>
+        <p>Wizards are supreme magic-users, defined and united as a class by the
+           spells they cast. Drawing on the subtle weave of magic that permeates
+            the cosmos, wizards cast spells of explosive fire, arcing lightning,
+            subtle deception, and brute-force mind control. Their magic conjures
+             monsters from other planes of existence, glimpses the future, or
+             turns slain foes into zombies. Their mightiest spells change one
+             substance into another, call meteors down from the sky, or open
+             portals to other worlds. </p>
+     <%= button_to "Gallery", image_index_path,:disabled => true, :method => :get, :class => "galleryButton"%>
+     <h1>Paladin </h1>
+     <p>Clad in plate armor that gleams in the sunlight despite the dust and grime
+        of long travel, a human lays down her sword and shield and places her hands
+         on a mortally wounded man. Divine radiance shines from her hands, the man’s
+          wounds knit closed, and his eyes open wide with amazement.
+     </p>
+     <%= button_to "Gallery", image_index_path,:disabled => true, :method => :get, :class => "galleryButton" %>
   </article>
 </section>
 
